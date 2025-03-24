@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="/images/cmulogo.png">
-    <link rel="stylesheet" href="style/user_admin.css">
+    <link rel="stylesheet" href="user_admin.css">
     <script type="text/javascript" src="app.js" defer></script>
 </head>
 <body>
     <nav id="sidebar">
         <ul>
             <li>
-                <span class="logo"> CITY OF MALABON <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUNIVERSITY</span>
+                <span class="logo"> CMU</span>
                 <button onclick="toggleSidebar()" id="toggle-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
@@ -28,12 +28,12 @@
                 </a>
             </li>
             <li>
-                <a href="reservation.php">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
-                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                      </svg>
-                    <span>&nbsp&nbsp&nbspReservation</span>
+                <a href="process_reservations.php">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+  <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+  <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+</svg>
+                    <span>&nbsp&nbsp&nbspReservation List</span>
                 </a>
             </li>
             <li>
@@ -57,25 +57,23 @@
             </button>
             <ul class="sub-menu show">
                 <div>
-                    <li><a href="userchat.php">&nbsp&nbsp&nbspConcern</a></li>
+                    <li><a href="adminchat.php">&nbsp&nbsp&nbspConcern</a></li>
                     <li><a href="logout.php">&nbsp&nbsp&nbspLog Out</a></li>
                 </div>
             </ul>
         </ul>
     </nav>
     <main>
-        <div class="container">
-            <h2>VISION</h2>
-            <p>A leading university that is committed for the advancement of human lives and global competitiveness through academic excellence, research and community linkages.</p>
-        </div>
-        <div class="container">
-            <h2>MISSION</h2>
-            <p>CMU aims to provide transformative and globally competitive higher education, holistic formation, research and innovation, excellent delivery of services, and sustainable community extension and linkages.</p>
-        </div>
-        <div class="container">
-            <h2>CMU AHON</h2>
-            <p> <b>C - Competent </b><br> <b>M - Morally upright</b> <br><b>U - United</b> <br><br><br> <b>A - Adaptable </b> <br> <b>H - Honest</b> <br><b>O - Optimistic</b> <br> <b> N - Nationalistic</b></p>
-        </div>
+        
+            <div class="container">
+                <div class="wrapper">
+                  <img src="images/img1.jpg">
+                  <img src="images/cmug.jpg">
+                  <img src="images/img1.jpg">
+                  <img src="images/img1.jpg">
+                </div>
+              </div>
+    
     </main>
 </body>
 </html>
