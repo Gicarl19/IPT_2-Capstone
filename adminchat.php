@@ -102,7 +102,8 @@ if (!$messages) {
             text-decoration: none;
             font-weight: bold;
         }
-    </style>
+    </style> 
+    <link rel="icon" type="image/x-icon" href="/images/cmulogo.png">
 </head>
 <body>
     <div class="home-button">

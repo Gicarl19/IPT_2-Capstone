@@ -58,7 +58,9 @@
             <ul class="sub-menu show">
                 <div>
                     <li><a href="userchat.php">&nbsp&nbsp&nbspConcern</a></li>
+                    <li><a href="faqs.php">&nbsp&nbsp&nbspFAQs</a></li>
                     <li><a href="logout.php">&nbsp&nbsp&nbspLog Out</a></li>
+                    
                 </div>
             </ul>
         </ul>
