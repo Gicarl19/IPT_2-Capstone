@@ -1,0 +1,245 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    margin-left: 298px;
+    padding: 70px;
+    background-color: #ffffff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+#sidebar {
+    width: 260px;
+    background-color: #003366;
+    color: white;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    border-right: 10px solid #dfbd01;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+#sidebar img {
+    width: 60px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+h1.sidebar {
+    font-size: 25px;
+    text-align: center;
+    color:white;
+    margin: 10px 0 20px;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#sidebar a,
+.dropdown-btn {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#sidebar a:hover,
+.dropdown-btn:hover {
+    background-color: #3c7ab8;
+}
+
+#sidebar a.active,
+.dropdown-btn.active {
+    background-color: #1abc9c;
+    font-weight: bold;
+}
+
+#sidebar svg {
+    margin-right: 10px;
+}
+
+.sub-menu {
+    display: none;
+    background-color: #003366;
+    padding-left: 1rem;
+}
+
+.sub-menu.active {
+    display: block;
+}
+
+.sub-menu li a {
+    padding: 8px 30px;
+    font-size: 0.9rem;
+    color: white;
+    display: block;
+}
+
+.sub-menu li a:hover {
+    background-color: #004080;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 35px;
+    color: #003366;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #003366;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+    width: 100%;
+    margin: 10px;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #00264d;
+    box-shadow: 0 0 12px rgba(76, 96, 175, 0.4);
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+
+.submit-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 16px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #003366;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #00264d;
+    transform: translateY(-2px);
+}
+
+.submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 12px rgba(76, 175, 80, 0.5);
+}
+
+.back-to-home {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 40px auto 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.back-to-home:hover {
+    background-color: #00264d;
+    transform: translateY(-2px);
+}
+
+.back-to-home:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 48, 96, 0.6);
+}
+
+.back-to-home a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 25px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}

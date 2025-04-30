@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 30px;
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  }
+  
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .button {
+    float: right;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }
+  .button a{
+    text-decoration: none;
+    float: right;
+    color: black;
+  }
