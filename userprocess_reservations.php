@@ -105,7 +105,7 @@
 </head>
 <body>
 <div class="button">
-    <button><a href="admin_page.php">Back</a></button>
+    <button><a href="user_page.php">Back</a></button>
 </div>
 
 <div id="successMessage"></div>
@@ -177,7 +177,7 @@ $sql = "SELECT idreservations, name, yrandsection, roomno, reservation_time, res
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "<table><tr><th>Reservation ID</th><th>Name</th><th>Year & Section</th><th>Room No</th><th>Reservation Time</th><th>Reservation Date</th><th>Actions</th></tr>";
+    echo "<table><tr><th>Reservation ID</th><th>Name</th><th>Year & Section</th><th>Room No</th><th>Reservation Time</th><th>Reservation Date</th></tr>";
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
         <td>{$row['idreservations']}</td>
@@ -186,16 +186,6 @@ if ($result->num_rows > 0) {
         <td>{$row['roomno']}</td>
         <td>{$row['reservation_time']}</td>
         <td>{$row['reservation_date']}</td>
-        <td>
-            <form method='POST' style='display:inline-block;'>
-                <input type='hidden' name='idreservations' value='{$row['idreservations']}'>
-                <input type='hidden' name='action' value='delete'>
-                <input type='submit' value='Delete'>
-            </form>
-            <form method='POST' action='update_form.php' style='display:inline-block;'>
-                <input type='hidden' name='idreservations' value='{$row['idreservations']}'>
-                <input type='submit' value='Update'>
-            </form>
         </td></tr>";
     }
     echo "</table>";

@@ -68,7 +68,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Reserve a Room</h2>
-            <form id="reservation-form" action="process_reservations.php" method="POST">
+            <form id="reservation-form" action="userprocess_reservations.php" method="POST">
                 <input type="hidden" id="roomno" name="roomno">
                 <input type="hidden" name="action" value="insert">
                 <label for="name">Your Name:</label>
