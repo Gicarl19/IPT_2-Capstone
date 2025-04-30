@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+   <div class="wrapper">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq">
+        <h2> Reservation Application Form Questions</h2>
+        <button class="accordion">
+            How can I reserve a room?
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+            <p>You can book online through our website.</p>
+        </div>
+        <button class="accordion">
+            Who can submit a reservation request?
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+            <p>Both CMU Professors and Admins can submit reservation requests.</p>
+        </div>
+        <button class="accordion">
+            What information do I need to provide?
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+            <p>Please provide your name, year, section, and the time and date of your reservation.</p>
+        </div>
+        <button class="accordion">
+            Can I physically visit my preferred room prior to submitting a reservation?
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+            <p>Yes, you may visit the room before making a reservation. Please coordinate with the facility manager.</p>
+        </div>
+    </div>
+   </div>
+   <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+   </script>
+   <style>
+    .panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+   </style>
+</body>
+</html>

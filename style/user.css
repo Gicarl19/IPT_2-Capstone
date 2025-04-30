@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: wheat;
+    
+}
+.container{
+    width: 80vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 57%;
+    left: 50%;
+    overflow: hidden;
+    border: 20px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    35%{
+        transform: translateX(-100%);
+    }
+    45%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    85%{
+        transform: translateX(-300%);
+    }
+    90%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the whole image fits inside the container without being cropped */
+}
+.logo{
+    width: 100%;
+    height: 70px;
+}
+
+.navbar {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space items evenly */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    background-color:#7aacff;
+    flex: 1; /* Makes each item take equal space */
+    
+}
+
+.navbar ul li a {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    text-align: center; /* Align text to the left */
+    padding: 15px;
+    
+}
+.navbar ul li a:hover{
+    color: white;
+}
+

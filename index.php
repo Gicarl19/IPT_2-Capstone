@@ -23,10 +23,15 @@ function isActiveForm($formName, $activeForm){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>City of Malabon University</title>
     <link rel="stylesheet" href="/style/index.css">
     <link rel="icon" type="image/x-icon" href="/images/cmulogo.png">
   
+=======
+    <title>Log In</title>
+    <link rel="stylesheet" href="/style/index.css">
+>>>>>>> b218cc57b39be7e5a5c323e07d87a6b98a21dfb0
 </head>
 <body>
     <div class="container">
